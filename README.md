@@ -10,19 +10,20 @@ It could be just right for favorite buttons!
 
 ## Requirements
 * iOS 7.0+
-* Swift 1.2
+* XCode 10.2+
+* Swift 5
 
 ## Installation
 #### Carthage
 Add the following line to your `Cartfile`:
 ```
-github "okmr-d/DOFavoriteButton"
+github "ilia3546/DOFavoriteButton"
 ```
 
 #### CocoaPods
 Add the following line to your `Podfile`:
 ```
-pod 'DOFavoriteButton'
+pod 'DOFavoriteButton', :git => 'https://github.com/ilia3546/DOFavoriteButton.git'
 ```
 
 #### Manual
@@ -65,10 +66,10 @@ func tapped(sender: DOFavoriteButton) {
 ## Customize
 You can change button color & animation duration:
 ```swift
-button.imageColorOff = UIColor.brownColor()
-button.imageColorOn = UIColor.redColor()
-button.circleColor = UIColor.greenColor()
-button.lineColor = UIColor.blueColor()
+button.imageColorOff = .brown
+button.imageColorOn = .red
+button.circleColor = .green
+button.lineColor = .blue
 button.duration = 3.0 // default: 1.0
 ```
 Result:  
